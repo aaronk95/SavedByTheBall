@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +22,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.App-body {
+  background-color: #86b593; /* Your custom background green */
+  background-image: 
+    radial-gradient(circle, #98c199 12px, transparent 12px),
+    radial-gradient(circle, #98c199 12px, transparent 12px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  min-height: 50vh;
+}
+.App-header{
+  background-color: #e7f0c2;
+  background-image: 
+    radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,0.05) 21%, rgba(255,255,255,0.05) 34%, transparent 35%, transparent),
+    linear-gradient(0deg, transparent 24%, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.03) 26%, transparent 27%, transparent 74%, rgba(255,255,255,0.03) 75%, rgba(255,255,255,0.03) 76%, transparent 77%, transparent);
+  background-size: 3px 3px;
+  min-height: 50vh;
+}
 .App-link {
   color: #61dafb;
 }
