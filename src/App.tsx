@@ -12,7 +12,7 @@ declare global {
 }
 
 // AdSense Component
-const AdSenseUnit = ({ isDarkMode, slot = "1234567890", format = "auto", responsive = true }) => {
+const AdSenseUnit = ({ isDarkMode, slot = "7035933556", format = "auto", responsive = true }) => {
     useEffect(() => {
         try {
             // Push the ad after component mounts
@@ -50,7 +50,7 @@ const AdSenseUnit = ({ isDarkMode, slot = "1234567890", format = "auto", respons
                 Advertisement
             </div>
             
-            {/* Actual AdSense ad unit */}
+            {/* Actual AdSense ad unit - updated with your configuration */}
             <ins
                 className="adsbygoogle"
                 style={{
@@ -297,7 +297,7 @@ function App() {
         return () => window.removeEventListener("popstate", handlePopState);
     }, []);
 
-    // Initialize Google AdSense
+    // Initialize Google AdSense - updated to match your configuration
     useEffect(() => {
         // Load AdSense script if not already loaded
         if (!document.querySelector('script[src*="adsbygoogle.js"]')) {
@@ -832,14 +832,12 @@ function App() {
                         gap: "1rem",
                     }}
                 >
-
-                    
+                    {/* Your main AdSense unit with the specific configuration */}
                     <AdSenseUnit 
                         isDarkMode={isDarkMode} 
-                        slot="0987654321" 
-                        format="vertical"
+                        slot="7035933556" 
+                        format="auto"
                         responsive={true}
-                        data-adtest="on"
                     />
                 </aside>
             </div>
